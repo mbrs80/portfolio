@@ -1,0 +1,186 @@
+body {
+  background-color: #001219;
+  margin: 0px;
+  border: solid 8px #0a9396;
+}
+
+body * {
+  color: #ffffff;
+  font-family: cursive;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: calc(100% - 16px);
+  background-color: #001219;
+  top: 0;
+  border-top: solid 8px #0a9396;
+  box-shadow: 0 4px 6px #264653;
+  z-index: 3;
+}
+
+.site-logo-link {
+  text-decoration: none;
+}
+
+.site-logo {
+  background-color: #0a9396;
+  font-size: 54px;
+  border: dashed 4px white;
+  border-radius: 15px 50px;
+  padding: 16px;
+  margin: 30px;
+}
+
+.navigation {
+  display: flex;
+  gap: 16px;
+  margin-right: 40px;
+}
+
+.navigation a {
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  text-decoration: underline #0a9396 wavy 5px;
+}
+
+.main-content {
+  margin: auto;
+  margin-top: 200px;
+  max-width: 1200px;
+}
+
+.div-container {
+  border: none;
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-presentation {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.picture {
+  float: right;
+  display: block;
+  width: 290px;
+  height: 296px;
+  border: white;
+  border-radius: 50%;
+  border-style: dotted;
+  margin: 20px;
+}
+
+.social-media {
+  display: flex;
+  font-size: 40px;
+  justify-content: space-evenly;
+  width: 450px;
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.projects {
+  width: 500px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.project-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-me {
+  margin-top: 40px;
+  text-align: center;
+}
+.contact-me a {
+  border: solid #001219;
+  text-decoration: none;
+  border-color: #0a9396;
+}
+
+.footer {
+  display: flex;
+  width: 500px;
+  margin: auto;
+  margin-top: 40px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .site-logo,
+  .navigation a,
+  .h1 p,
+  .social-media,
+  .project-title .contact-me h2 p a,
+  .footer a p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    display: unset;
+    flex-direction: unset;
+    justify-content: unset;
+    align-items: unset;
+    text-align: center;
+  }
+
+  .site-logo-link {
+    display: inline-block;
+  }
+
+  .site-logo {
+    padding: 16px 32px;
+  }
+
+  .navigation a {
+    display: none;
+  }
+
+  .picture {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .social-media {
+    width: 100%;
+  }
+
+  .div-presentation {
+    margin-left: unset;
+    text-align: center;
+  }
+  .div-container {
+    flex-direction: column-reverse;
+  }
+
+  .projects {
+    width: 100%;
+  }
+
+  .footer {
+    width: 100%;
+  }
+}
